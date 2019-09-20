@@ -1,0 +1,32 @@
+<nav class="sidebar" [ngClass]="{sidebarPushRight: isActive, collapsed: collapsed}">
+    <div class="list-group">
+        <ul>
+            <li>
+                <a routerLink="/menu" [routerLinkActive]="['router-link-active']" class="list-group-item">
+    
+                    <span>{{ 'Menu'  }}</span>
+                </a>
+                </li>
+                <br>
+                <br>
+                <li>
+                <a [routerLink]="['/order']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    
+                    <span>{{ 'Order'  }}</span>
+                </a>
+            </li>
+            <br>
+                <br>
+                <li>
+                <a [routerLink]="['/cart']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                    
+                    <span>{{ 'Cart'  }}</span>
+                </a>
+            </li>
+        </ul>
+               
+    </div>
+   
+  </nav>
+  
+  

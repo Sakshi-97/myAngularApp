@@ -1,0 +1,21 @@
+<div class="col-md-10">
+    <h2 class="text-center">Edit Details</h2>
+    <form [formGroup]="editForm" (submit)="onSubmit(editForm.value)">
+        <div class="form-group">
+            <label for="id">S_No</label>
+            <input type="text" formControlName="id" name="S_No" class="form-control" id="Id">
+        </div>
+
+        <div class="form-group">
+            <label for="id">Name</label>
+            <input type="text" formControlName="name" name="name" class="form-control" id="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="id">Price</label>
+            <input type="text" formControlName="price" name="price" class="form-control" id="price">
+        </div>
+
+        <button class="btn btn-success" type="submit">Save</button>
+    </form>
+</div>

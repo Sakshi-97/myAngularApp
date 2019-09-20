@@ -1,0 +1,16 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S_No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let data of cart">
+      <td>{{data.id}}</td>
+      <td>{{data.name}}</td>
+      <td>{{data.price}}</td>      
+    </tr>
+  </tbody>
+</table>

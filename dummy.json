@@ -1,0 +1,66 @@
+{
+  "dishes": [
+    {
+      "id": "2",
+      "name": "Spring Roll",
+      "price": "60/-"
+    },
+    {
+      "id": "3",
+      "name": "Burger",
+      "price": "45/-"
+    },
+    {
+      "id": "4",
+      "name": "Pizza",
+      "price": "120/-"
+    },
+    {
+      "id": "5",
+      "name": "Sandwich",
+      "price": "90/-"
+    },
+    {
+      "id": "6",
+      "name": "Hot Dog",
+      "price": "60/-"
+    },
+    {
+      "id": "7",
+      "name": "Manchurian",
+      "price": "150/-"
+    },
+    {
+      "id": "8",
+      "name": "Fried Rice",
+      "price": "90/-"
+    },
+    {
+      "id": "9",
+      "name": "Chilly Potato",
+      "price": "110/-"
+    }
+  ],
+  "cart": [
+    {
+      "id": "2",
+      "name": "Spring Roll",
+      "price": "60/-"
+    },
+    {
+      "id": "3",
+      "name": "Burger",
+      "price": "45/-"
+    },
+    {
+      "id": "4",
+      "name": "Pizza",
+      "price": "120/-"
+    },
+    {
+      "id": "7",
+      "name": "Manchurian",
+      "price": "150/-"
+    }
+  ]
+}

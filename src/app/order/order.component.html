@@ -1,0 +1,22 @@
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">S_No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr  class="table-danger" *ngFor="let item of dishes ">
+  
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.price}}</td>
+         <!-- <button type="button" value="+" (click)="myFunction(this.value)" class="btn btn-default btn-sm"> -->
+            <input type="button"  value="+" (click)="myFunction('+',item.id)">
+
+            <input type="button" value="-" (click)="myFunction('-',item.id)">
+                  
+      </tr>
+      </tbody>
+  </table>

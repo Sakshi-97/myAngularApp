@@ -1,0 +1,21 @@
+<div class="col-md-10">
+    <h2 class="text-center">Add a Dish</h2>
+    <form [formGroup]="addForm" (submit)="onSubmit(addForm.value)">
+        <div class="form-group">
+            <label for="id">S_No</label>
+            <input type="text" formControlName="id" name="S_No" class="form-control" id="S_No">
+        </div>
+        
+        <div class="form-group">
+            <label for="id">Name</label>
+            <input type="text" formControlName="name" name="name" class="form-control" id="Name">
+        </div>
+
+        <div class="form-group">
+            <label for="id">Price</label>
+            <input type="text" formControlName="price" name="price" class="form-control" id="Price">
+        </div>
+        
+        <button class="btn btn-success" type="submit">Save</button>
+    </form>
+</div>

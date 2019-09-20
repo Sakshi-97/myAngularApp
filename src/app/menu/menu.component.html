@@ -1,0 +1,27 @@
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">S_No</th>
+      <th scope="col">Name</th>
+      <th scope="col">Price</th>
+      &nbsp;
+      &nbsp;
+      &nbsp;
+      <button (click)="add()" class="btn btn-primary" >Add Item</button>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  class="table-info" *ngFor="let item of dishes ">
+
+      <td>{{item.id}}</td>
+      <td>{{item.name }}</td>
+      <td>{{item.price}}</td>
+    
+      <button (click)="edit(item.id)" class="btn btn-secondary">Edit</button>
+      &nbsp;
+      <button (click)="delete(item.id)" class="btn btn-danger">Delete</button>
+
+    </tr>
+  
+  </tbody>
+</table>

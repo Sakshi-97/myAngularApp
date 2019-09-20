@@ -1,24 +1,24 @@
 $topnav-background-color: #222;
-*,
-*::before,
-*::after {
-  box-sizing: border-box
-}
 .sidebar {
     border-radius: 0;
     position: fixed;
     z-index: 1000;
     top:56px;
     left: 235px;
-    width: 235px;
+    width: 175px !important;
+    height: 900px;
     margin-left: -235px;
     margin-bottom: 48px;
     border: none;
     border-radius: 0;
-    overflow-y: hidden;
+    overflow-y: auto;
     background-color: $topnav-background-color;
+    // background-color: transparent;
     bottom: 0;
     overflow-x: hidden;
+    overflow-y: hidden;
+  
+    //  position: relative;
     padding-bottom: 40px;
     white-space: nowrap;
     -webkit-transition: all 0.2s ease-in-out;
@@ -34,6 +34,8 @@ $topnav-background-color: #222;
             border-radius: 0;
             color: #999;
             text-decoration: none;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 30px;
             .fa {
                 margin-right: 10px;
             }
@@ -136,15 +138,15 @@ $topnav-background-color: #222;
 }
 @media screen and (max-width: 992px) {
     .sidebar {
-        top: 60px;
+        top: 54px;
         left: 0px;
     }
 }
-@media print {
-    .sidebar {
-        display: none !important;
-    }
-}
+// @media print {
+//     .sidebar {
+//         display: none !important;
+//     }
+// }
 @media (min-width: 992px) {
     .header-fields {
         display: none;
@@ -167,7 +169,7 @@ $topnav-background-color: #222;
 
 .toggle-button {
     position: fixed;
-    width: 236px;
+    width: 150px;
     cursor: pointer;
     padding: 12px;
     bottom: 0;
