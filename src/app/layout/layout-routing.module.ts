@@ -6,7 +6,7 @@ import { OrderComponent } from '../order/order.component';
 import { AddComponent } from '../add/add.component';
 import { EditComponent } from '../edit/edit.component';
 import { CartComponent } from '../cart/cart.component';
-
+import {PlaceOrderComponent} from '../place-order/place-order.component';
 
 const routes: Routes = [
   {
@@ -16,7 +16,8 @@ const routes: Routes = [
       { path: 'order', component: OrderComponent },
       {path: 'add', component:AddComponent},
       {path: 'edit',component:EditComponent},
-      {path: 'cart',component:CartComponent}
+      {path: 'cart',component:CartComponent},
+      {path:'placeOrder',component: PlaceOrderComponent}
      
     ]
   }

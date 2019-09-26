@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { bindCallback } from 'rxjs';
 
 @Component({
   selector: 'app-cart',
@@ -18,4 +19,16 @@ export class CartComponent implements OnInit {
     });
   }
 
+bill()
+{
+  let bill  = 0;
+  console.log("calculating bill__________");
+  for(let index of this.cart){
+  console.log("price is",index.price);
+  bill = (bill + index.price);
+  console.log("total bill is",bill);
+  }
+  return bill;
 }
+}
+

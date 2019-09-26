@@ -10,10 +10,11 @@ import { SidebarComponent } from '../sidebar/sidebar.component';
 import { AddComponent } from '../add/add.component';
 import { EditComponent } from '../edit/edit.component';
 import { CartComponent } from '../cart/cart.component';
+import { PlaceOrderComponent } from '../place-order/place-order.component';
 
 
 @NgModule({
-  declarations: [LayoutComponent,MenuComponent,OrderComponent,CartComponent,NavbarComponent,SidebarComponent,EditComponent,AddComponent],
+  declarations: [LayoutComponent,MenuComponent,OrderComponent,CartComponent,PlaceOrderComponent,NavbarComponent,SidebarComponent,EditComponent,AddComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,

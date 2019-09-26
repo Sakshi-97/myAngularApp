@@ -27,14 +27,14 @@ this.getUserDetail();
   
 onSubmit(value:any){
   console.log("editing",value);
-  return this.http.put<any>(`http://localhost:4000/dishes/${value.id}`, value).subscribe((res) => {
+  return this.http.put<any>(`http://localhost:3000/dishes/${value.id}`, value).subscribe((res) => {
       console.log(res);
       this.router.navigate(['/menu'])
     });
     
 }
 getUserDetail(){
-  this.http.get(`http://localhost:4000/dishes/${this.userId}`, this.userId).subscribe(data => {
+  this.http.get(`http://localhost:3000/dishes/${this.userId}`, this.userId).subscribe(data => {
     this.editForm.patchValue(data);
    
   })
