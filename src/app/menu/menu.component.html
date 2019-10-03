@@ -1,27 +1,33 @@
-<table class="table">
-  <thead class="thead-dark">
-    <tr>
-      <th scope="col">S_No</th>
-      <th scope="col">Name</th>
-      <th scope="col">Price</th>
-      &nbsp;
-      &nbsp;
-      &nbsp;
-      <button (click)="add()" class="btn btn-primary" >Add Item</button>
-    </tr>
-  </thead>
-  <tbody>
-    <tr  class="table-info" *ngFor="let item of dishes ">
+<div class="table">
+  <button class="btn btn-primary">
+      <i class="fa fa-plus-square" aria-hidden="true"  (click)="add()">&nbsp;ADD</i>
+  </button>
+  <table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">S_No</th>
+        <th scope="col">Name</th>
+        <th scope="col">Price</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-row" *ngFor="let item of dishes ">
 
-      <td>{{item.id}}</td>
-      <td>{{item.name }}</td>
-      <td>{{item.price}}</td>
-    
-      <button (click)="edit(item.id)" class="btn btn-secondary">Edit</button>
-      &nbsp;
-      <button (click)="delete(item.id)" class="btn btn-danger">Delete</button>
-
-    </tr>
-  
-  </tbody>
-</table>
+        <td>{{item.id}}</td>
+        <td>{{item.name }}</td>
+        <td>{{item.price}}</td>
+        <td>
+          <button (click)="edit(item.id)" class="btn btn-warning ">
+            <i class="fa fa-pencil-alt" aria-hidden="true" (click)="edit(item.id)">              
+            </i>
+          </button>&nbsp;
+          <button  class="btn btn-danger">
+              <i class="fa fa-trash" aria-hidden="true" (click)="delete(item.id)" ></i>
+          </button>
+       
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

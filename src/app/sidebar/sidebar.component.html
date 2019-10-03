@@ -7,9 +7,9 @@
                     <span>{{ 'Menu'  }}</span>
                 </a>
                 </li>
-                <br>
-                <br>
-                <li>
+                <!-- <br>
+                <br> -->
+                <!-- <li>
                 <a [routerLink]="['/order']" [routerLinkActive]="['router-link-active']" class="list-group-item">
                     
                     <span>{{ 'Order'  }}</span>
@@ -22,13 +22,21 @@
                     
                     <span>{{ 'Cart'  }}</span>
                 </a>
-            </li>
+            </li> -->
             <br>
                 <br>
                 <li>
                     <a [routerLink]="['/placeOrder']" [routerLinkActive]="['router-link-active']" class="list-group-item">
                         
                         <span>{{ 'Place Order'  }}</span>
+                    </a>
+                </li>
+                <br>
+                <br>    
+                <li>
+                    <a [routerLink]="['/orderDetails']" [routerLinkActive]="['router-link-active']" class="list-group-item">
+                        
+                        <span>{{ 'Order Details'  }}</span>
                     </a>
                 </li>
         </ul>

@@ -26,33 +26,46 @@ myFunction(val:any,id){
 console.log("in____________myFunction");
 console.log("value is",val);
 console.log("id",id)
+
 if(val==='+'){
+  console.log("in____________if");
+
   this.count = this.count +1;
+
   for(let index of this.dishes) {
+
     if(index.id === id) {
+      console.log("in_______nested_________if");
       this.data = index;
       console.log("data", this.data);
     }
+
   }
   this.http.post("http://localhost:3000/cart", this.data).subscribe((res:any)=>{
     console.log(res);
     // this.dishes = res;
   });
 }
+
 else if(val==='-'){
+  console.log("in______else_____if")
+
   this.count = this.count -1;
   console.log("count of dish",this.count);
 }
 if(this.count<0){
-  this.http.delete("http://localhost:3000/dishes/"+id).subscribe((res: any) => {
+
+    this.http.delete("http://localhost:3000/dishes/"+id).subscribe((res: any) => {
     console.log(res);
     
   });
 
   console.log("delete", id);
+  
   let index = this.dishes.findIndex((e) => {
   return e.id === id;
   });
+
   console.log("Index_________________",index)
   this.dishes.splice(index,1);
   console.log("Comments",this.dishes)

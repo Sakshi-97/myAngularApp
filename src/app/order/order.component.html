@@ -4,6 +4,7 @@
         <th scope="col">S_No</th>
         <th scope="col">Name</th>
         <th scope="col">Price</th>
+       
         </tr>
     </thead>
     <tbody>
@@ -12,10 +13,12 @@
         <td>{{item.id}}</td>
         <td>{{item.name}}</td>
         <td>{{item.price}}</td>
+       
          <!-- <button type="button" value="+" (click)="myFunction(this.value)" class="btn btn-default btn-sm"> -->
             <input type="button"  value="+" (click)="myFunction('+',item.id)">
-
+          
             <input type="button" value="-" (click)="myFunction('-',item.id)">
+            <!-- <p>{{item.quantity}}</p> -->
                   
       </tr>
       </tbody>

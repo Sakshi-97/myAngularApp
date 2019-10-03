@@ -1,25 +1,46 @@
+<div class="container">
 <table class="table">
   <thead class="thead-dark">
     <tr>
       <th scope="col">S_No</th>
       <th scope="col">Name</th>
       <th scope="col">Price</th>
+      <th scope="col">Quantity</th>
     </tr>
   </thead>
   <tbody>
-    <tr class="table-danger" *ngFor="let item of dishes ">
+    <tr class="table-row" *ngFor="let item of dishes ">
 
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
       <td>{{item.price}}</td>
-      <!-- <button type="button" value="+" (click)="myFunction(this.value)" class="btn btn-default btn-sm"> -->
-      <input type="button" value="+" (click)="myFunc('+',item.id)">
-      <p>{{ item.quantity }}</p>
-      <input type="button" value="-" (click)="myFunc('-',item.id)">
-      <!-- <div *ngIf="show">
-            <button type="button"  class="btn btn-warning">Add</button>
-            </div> -->
+      <td>
+        <div class="row btn-group" role="group" *ngIf="item.quantity">
+            <input type="button" value="-" (click)="myFunc('-',item)" *ngIf="item.quantity">
+            &nbsp;&nbsp;{{item.quantity}} &nbsp;&nbsp; 
+            <input type="button" value="+" (click)="myFunc('+',item)" *ngIf="item.quantity">
+        </div>
+        <button type="button" class="btn-primary" 
+                *ngIf="!item.quantity"
+                (click)="add(item)">Add +</button>
 
+      </td>
     </tr>
   </tbody>
 </table>
+<div class="alert alert-success" role="alert">
+  Total Bill = {{bill()}}
+</div>
+<!-- <div class="form-group">
+    <label style="color:goldenrod">Order Name</label>
+    <input type="text" placeholder="Enter Name" class="form-control" id="userName" [(ngModel)]="userName" name="userName" ngModel>
+  </div> -->
+  <div class="form-group">
+      <label style="color:rgb(128, 29, 29)"> Your Address</label>
+      <input type="text" placeholder="Enter Address" class="form-control" id="address" [(ngModel)]="address" name="address" ngModel>
+    </div>
+
+<button class="detail" type="submit" class="btn-danger" (click)="details()" [routerLink]="['/orderDetails']">
+Place Order</button>
+
+</div>

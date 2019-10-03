@@ -11,15 +11,20 @@ import { AddComponent } from '../add/add.component';
 import { EditComponent } from '../edit/edit.component';
 import { CartComponent } from '../cart/cart.component';
 import { PlaceOrderComponent } from '../place-order/place-order.component';
+import { OrderDetailComponent } from '../order-detail/order-detail.component';
+import { FormsModule } from '@angular/forms';
+
 
 
 @NgModule({
-  declarations: [LayoutComponent,MenuComponent,OrderComponent,CartComponent,PlaceOrderComponent,NavbarComponent,SidebarComponent,EditComponent,AddComponent],
+  declarations: [LayoutComponent, OrderDetailComponent,MenuComponent,OrderComponent,CartComponent,PlaceOrderComponent,NavbarComponent,SidebarComponent,EditComponent,AddComponent],
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
     
   ]
+  
 })
 export class LayoutModule { }

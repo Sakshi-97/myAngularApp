@@ -3,8 +3,8 @@
     {
       "id": "1",
       "quantity": 0,
-      "name": "Fried Rice",
-      "price": 100
+      "name": "Pizza",
+      "price": 110
     },
     {
       "id": "2",
@@ -21,8 +21,8 @@
     {
       "id": "4",
       "quantity": 0,
-      "name": "Chilly Potato",
-      "price": 90
+      "name": "Momos",
+      "price": 80
     },
     {
       "id": "5",
@@ -33,7 +33,7 @@
     {
       "id": "6",
       "quantity": 0,
-      "name": "Pizza",
+      "name": "Shake",
       "price": 150
     },
     {
@@ -47,14 +47,15 @@
       "quantity": 0,
       "name": "Cheese Chilly",
       "price": 120
+    },
+    {
+      "id": "9",
+      "quantity": 0,
+      "name": "Mushrrom",
+      "price": 150
     }
   ],
   "cart": [
-    {
-      "id": "1",
-      "quantity": 0,
-      "name": "Fried Rice",
-      "price": 100
-    }
+  
   ]
 }

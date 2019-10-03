@@ -7,6 +7,7 @@ import { AddComponent } from '../add/add.component';
 import { EditComponent } from '../edit/edit.component';
 import { CartComponent } from '../cart/cart.component';
 import {PlaceOrderComponent} from '../place-order/place-order.component';
+import { OrderDetailComponent } from '../order-detail/order-detail.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,8 @@ const routes: Routes = [
       {path: 'add', component:AddComponent},
       {path: 'edit',component:EditComponent},
       {path: 'cart',component:CartComponent},
-      {path:'placeOrder',component: PlaceOrderComponent}
+      {path:'placeOrder',component: PlaceOrderComponent},
+      {path:'orderDetails',component: OrderDetailComponent}
      
     ]
   }
